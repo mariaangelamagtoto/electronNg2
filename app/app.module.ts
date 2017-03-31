@@ -1,16 +1,16 @@
 import {
   NgModule
-} from "@angular/core"
+} from '@angular/core'
 import {
   BrowserModule
-} from "@angular/platform-browser";
+} from '@angular/platform-browser';
 import {
   FormsModule
-} from "@angular/forms";
+} from '@angular/forms';
 /*components*/
 import {
   AppComponent
-} from "./app.component";
+} from './app.component';
 import {
   IndexComponent
 } from './components/index/index.component';
@@ -27,6 +27,7 @@ import {
 import {
   rootRouting
 } from './components/root.route.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -41,4 +42,6 @@ import {
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {}
+}
