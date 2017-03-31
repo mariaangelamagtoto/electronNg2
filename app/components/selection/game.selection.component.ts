@@ -8,8 +8,8 @@ import {
 
 @Component({
   selector    : 'game-selection',
-  templateUrl : './components/selection/game.selection.component.html',
-  styleUrls   : ['./components/selection/game.selection.component.less']
+  templateUrl : 'game.selection.component.html',
+  styleUrls   : ['game.selection.component.less']
 })
 export class GameSelectionComponent {
 

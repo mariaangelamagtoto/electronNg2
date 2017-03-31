@@ -2,6 +2,7 @@ var webpack           = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers           = require('./helpers');
+var webpackTargetElectronRenderer = require('webpack-target-electron-renderer');
 
 module.exports = {
   entry: {
@@ -13,7 +14,9 @@ module.exports = {
   resolve: {
     extensions : ['.ts', '.js']
   },
-
+  node: {
+    fs: "empty"
+  },
   module : {
     rules : [
       {
@@ -28,10 +31,6 @@ module.exports = {
       {
         test : /\.html$/,
         use  : 'html-loader'
-      },
-      {
-        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        use: 'file-loader?name=assets/[name].[hash].[ext]&publicPath=/'
       },
       {
         test: /\.less$/,

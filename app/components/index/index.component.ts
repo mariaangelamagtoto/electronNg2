@@ -8,8 +8,8 @@ import {
 @Component({
   moduleId    : module.id,
   selector    : 'index',
-  templateUrl : './index.component.html',
-  styleUrls   : ['./index.component.less']
+  templateUrl : 'index.component.html',
+  styleUrls   : ['index.component.less']
 })
 export class IndexComponent {
   constructor(

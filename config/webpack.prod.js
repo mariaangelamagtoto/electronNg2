@@ -43,7 +43,7 @@ module.exports = webpackMerge(commonConfig, {
         minimize   : false
       }
     }),
-    /*Opens default browser*/ 
+    /*Opens default browser*/
     new OpenBrowserPlugin()
   ]
 });

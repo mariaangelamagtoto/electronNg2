@@ -22,7 +22,9 @@ app.on('ready', () => {
     minHeight : 720,
   });
   mainWindow.setMenu(null);
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
+  // mainWindow.loadURL('file://' + __dirname + '/index.html');
+  mainWindow.loadURL('http://localhost:8081');
+
   mainWindow.webContents.openDevTools();
   mainWindow.on('closed', () =>  {
     mainWindow = null;
